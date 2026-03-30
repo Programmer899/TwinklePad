@@ -70,7 +70,7 @@ The firmware is written in C using the Pico SDK and is structured into modular c
 
 ## 📷 Preview
 
-![HackPad Preview](assets/hackpad-preview.png)
+![HackPad Preview](assets/Clean_TwinklePad_V8.png)
 
 ---
 
