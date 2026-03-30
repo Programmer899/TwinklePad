@@ -41,10 +41,10 @@
 			(layerselection 0x00000000_00000000_55555555_5755f5ff)
 			(plot_on_all_layers_selection 0x00000000_00000000_00000000_00000000)
 			(disableapertmacros no)
-			(usegerberextensions no)
+			(usegerberextensions yes)
 			(usegerberattributes yes)
 			(usegerberadvancedattributes yes)
-			(creategerberjobfile yes)
+			(creategerberjobfile no)
 			(dashed_line_dash_ratio 12.000000)
 			(dashed_line_gap_ratio 3.000000)
 			(svgprecision 4)
@@ -72,9 +72,9 @@
 			(subtractmaskfromsilk no)
 			(outputformat 1)
 			(mirror no)
-			(drillshape 1)
+			(drillshape 0)
 			(scaleselection 1)
-			(outputdirectory "")
+			(outputdirectory "C:/Users/ludvig.lindgren/Downloads/Twinklepad/production/")
 		)
 	)
 	(net 0 "")
@@ -10036,7 +10036,7 @@
 		(property "Reference" "J1"
 			(at 1.9 5.91 90)
 			(layer "F.SilkS")
-			(uuid "53e4eaaa-f444-44ea-84dd-334d1e707c82")
+			(uuid "6de8dd0b-ee59-4e5c-a7e8-5cbee6e82cde")
 			(effects
 				(font
 					(size 1 1)
@@ -10048,7 +10048,7 @@
 			(at 18.5 14 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "188684c9-b8e9-49d9-a894-7f4fb8c3177c")
+			(uuid "c998343b-35ef-4350-bf85-7de22152627b")
 			(effects
 				(font
 					(size 1 1)
@@ -10060,7 +10060,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "6d7d83a4-4619-4d62-b9de-66b3659479f0")
+			(uuid "11a81c52-52d3-4889-8aec-4b435a95a382")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10072,7 +10072,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "a07082a2-1ed5-405a-bdf9-67ce6559fb17")
+			(uuid "69f35cad-47a4-452c-bddd-0da4c5d6576b")
 			(effects
 				(font
 					(size 1.27 1.27)
