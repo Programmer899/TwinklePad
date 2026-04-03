@@ -1,88 +1,65 @@
-# HackPad
+# Twinklepad
 
-A compact, custom-built macro keypad powered by the Raspberry Pi Pico W.  
-Designed for flexibility, HackPad combines a 4x4 key matrix, rotary encoders, RGB lighting, and a small OLED display into a multi-mode input device.
-
----
-
-## ✨ Features
-
-- 🔢 **4x4 Mechanical Key Matrix**  
-  Customizable inputs for macros, shortcuts, or tools
-
-- 🎛️ **Dual Rotary Encoders**  
-  Smooth control for volume, navigation, or parameter tuning
-
-- 🌈 **Per-Key RGB (SK6812)**  
-  Individually addressable lighting for feedback and effects
-
-- 🖥️ **128x32 OLED Display**  
-  Displays current mode and system status
-
-- 🔊 **Piezo Buzzer**  
-  Audio feedback and simple tone generation
-
-- 🔌 **USB HID Support (TinyUSB)**  
-  Acts as a keyboard or macro pad when connected to a computer
+This is a small multi task keyboard with 3 custom modes, featuring a TRRS port for double connection, 2 encoders using GPIO and a display for displaying different contents.
 
 ---
 
-## 🎮 Modes
-
-HackPad includes multiple operating modes, switchable via a hardware toggle:
-
-- **Normal Mode**  
-  Standard macro pad behavior (keyboard shortcuts, commands)
-
-- **Music Mode**  
-  Keys act as notes (C, D, E, etc.) with sound output via piezo
-
-- **Calc Mode**  
-  Intended for calculator-style input and numeric operations
-
-The current mode is shown on the OLED display.
+## Features
+1 pcs of 3 step toggle for switching mode
+4x4 matrix of key switches
+2 pcs of encoders for example slider values such as volume
+1 ssd1306 128x32 display for displaying different types of content
+1 TRRS port for dual connected modules (could be used for a split keyboard as an example)
 
 ---
 
-## 🧠 Firmware Overview
+## Modes
 
-The firmware is written in C using the Pico SDK and is structured into modular components:
+The Twinklepad has 3 modes by default
+- Music mode (to the left) - when you press a key it plays a note
+- Normal mode (in the middle) - when you press a key it forwards that to the pc as a keycode input
+- Calc mode (on the right) - For future calculator mode, able to calculate differents formulas
 
-- `matrix` – Key scanning and input handling  
-- `encoder` – Rotary encoder processing  
-- `display` – OLED rendering (mode + UI)  
-- `rgb` – LED control  
-- `usb` – HID communication via TinyUSB  
+The current mode for my trinklepad is shown on the display by default.
+---
+
+My firmware is written in c from the ground up and has some different features such as:
+- Matrix scanning for key inputs
+- Encoder control (default: only left is connected to "pitch")
+- Display - only capable of displaying mode by default
 
 ---
 
-## 🛠️ Hardware
+## Hardware
 
-- Raspberry Pi Pico W  
+- Raspberry Pi Pico 2 W
 - 4x4 MX-style switches  
-- 2× Rotary encoders (with push buttons)  
-- SK6812 Mini-E LEDs  
-- SSD1306 128x32 OLED  
-- Piezo buzzer  
-- 3-position mode switch  
+- 2 pcs Rotary encoders (with push buttons)
+- SK6812-MINI-E LEDs 
+- SSD1306 128x32 OLED
+- Piezo buzzer 4.5 khz
+- 3-position mode switch (ON-OFF-ON)
 
 ---
 
-## 📷 Preview
+## Preview
 
-![HackPad Preview](assets/Clean_TwinklePad_V8.png)
+![Twinklepad Preview](assets/Clean_TwinklePad_V8.png)
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
+Clean software:
 1. Build with Pico SDK (CMake + Ninja)
 2. Flash the `.uf2` file to the Pico
 3. Connect via USB and start using HackPad
 
+Use mine?
+Just flash the .uf2 file in the fully assembled/production folder.
+
 ---
 
-## 📌 Notes
+## Notes
 
-This is a custom project and may evolve over time.  
-Feel free to modify firmware and hardware to suit your needs.
+This is one of my first times doing something like this.
