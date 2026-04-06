@@ -2,6 +2,8 @@
 
 This is a small multi task keyboard with 3 custom modes, featuring a TRRS port for double connection, 2 encoders using GPIO and a display for displaying different contents.
 
+Note that the parts that is not a part of the HackPad guide will be bought or funded yourself.
+
 ---
 
 ## Features
